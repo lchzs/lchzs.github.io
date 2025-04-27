@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* 全局正文字体为 Times New Roman，且字体大小调大 */
+    body { font-family: 'Times New Roman', serif; font-size: 18px; line-height: 1.8; color: #333; padding: 20px; max-width: 900px; margin: auto; }
+    /* 标题字体为 Arial */
+    header h1,
+    section h2,
+    .experience h3,
+    .education h3 { font-family: Arial, sans-serif; }
+    header { text-align: center; margin-bottom: 40px; }
+    /* 标题与照片并排 */
+    .header-content { display: flex; align-items: center; justify-content: center; gap: 60px; }
+    header h1 { font-size: 2.5em; }
+    header .profile-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+    header p { font-size: 1.2em; color: #555; margin-top: 10px; }
+    nav ul { display: flex; justify-content: center; list-style: none; margin-top: 10px; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { text-decoration: none; color: #007acc; font-weight: bold; }
+    section { margin-bottom: 40px; }
+    section h2 { font-size: 1.8em; border-bottom: 2px solid #007acc; padding-bottom: 5px; margin-bottom: 15px; }
+    .flex { display: flex; flex-wrap: wrap; }
+    .flex .item { flex: 1; min-width: 250px; margin-right: 20px; }
+    .item:last-child { margin-right: 0; }
+    .experience, .education { margin-top: 15px; }
+    .experience h3, .education h3 { font-size: 1.2em; margin-bottom: 5px; }
+    .experience span, .education span { font-size: 0.9em; color: #666; }
+    ul.skills { display: flex; flex-wrap: wrap; list-style: none; }
+    ul.skills li { background: #f0f0f0; padding: 5px 10px; border-radius: 4px; margin: 5px; }
+    footer { text-align: center; font-size: 0.9em; color: #888; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Chenhui LIU</h1>
+      <!-- 请将 photo.jpg 替换为你的自拍照片文件 -->
+      <img class="profile-photo" src="photo.jpg" alt="Chenhui LIU">
+    </div>
+    <p>Guangzhou • <a href="mailto:cliu916@connect.hkust-gz.edu.cn">cliu916@connect.hkust-gz.edu.cn</a></p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>A sophomore undergraduate student in HKUST(GZ), who is still researching my interest.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <ul>
+        <li>2024/6-2024/9 Research about tennis ball recognition and speed detection</li>
+        <li>2025/2-2025/3 One of the leaders of a project about LAW-LLM, focusing on RAG, multi-modal and long text generation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <h3>UG2, major in AI</h3>
+      <p>UFUG 1105 Honors Calculus I 2023-24 Fall A+</p>
+      <p>UFUG 1103 Calculus II 2023-24 Spring A+</p>
+      <p>UFUG 2601 C++ Programming 2023-24 Fall A-</p>
+      <p>UFUG 1601 Intro. to CS 2023-24 Fall A-</p>
+      <p>UFUG 2103 Linear Algebra 2024-25 Fall A-</p>
+      <p>AIAA 2205 Introduction to AI 2024-25 Fall A</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>python coding ability</li>
+      <li>pytorch skill</li>
+      <li>basic machine learing knowledge</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email at <a href="mailto:cliu916@connect.hkust-gz.edu.cn">cliu916@connect.hkust-gz.edu.cn</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Chenhui LIU. All rights reserved.
+  </footer>
+</body>
+</html>
